@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+    }
+    .container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    .detcontainer {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    .detailed-page-mainimage{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+    }
+    .dltld-image-item-dtls{
+        width: 100%;
+        /* height: 100%; */
+        min-height: 651px;
+        max-height: 651px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        position: relative;
+        border: 1px solid #CFCFCF;
+        border-radius: 14px;
+    }
+    .text-area-dltld{
+        width: 100%;
+        padding: 40px 30px;
+        position: absolute;
+        bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        backdrop-filter: blur(10px);
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
+        background-color: #0000007a;
+    }
+    .dtld-head-text{
+        font-weight: 600;
+        font-size: 24px;
+        color: white;
+    }
+    .dtld-title-text{
+        display: flex;
+        align-items: center;
+        color: white;
+        padding-top: 14px;
+    }
+    .detailing-itm-prnt{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .detailing-heading{
+        font-size: 24px;
+        font-weight: 700;
+        color: #1B1B1F;
+        padding-bottom: 25px;
+    }
+    .deatiling-titltes{
+        font-weight: 400;
+        font-size: 18px;
+        color: #2D2D31;
+    }
+    .card-blog--img-prnt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .innerpage-under-blog-list-head{
+        font-weight: 600;
+        font-size: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .innerpage-under-blog-list-titlte span{
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .featured-blog{
+        padding-top: 25px;
+        border:1px solid #F8F8F8;
+        padding: 16px;
+    }  
+    .innerpage-under-blog-list-titlte{
+        width: fit-content;
+    }         
+
+    @media (min-width: 768px) {
+        .dtld-head-text{
+            font-size: 42px;
+        }
+        .deatiling-titltes{
+            font-size: 24px;
+        }
+        .detailing-heading{
+            font-size: 34px;
+        }
+        .detailing-itm-prnt{
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+
+        .innerpage-under-blog-list-head{
+            font-size: 26px;
+            width: 50%;
+        }
+        .innerpage-under-blog-list-titlte span{
+            font-size: 18px;
+        }
+
+    }
+    @media (min-width: 1200px) {
+        .detcontainer {
+            width: 75%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .container {
+            width: 85%;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .featured-blog{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        .card-blog--img-prnt{
+            justify-content: flex-start;
+        }
+
+    }
+    </style>
+</head>
+<body>
+<section class="detcontainer">
+    <div class="detailed-page-mainimage">
+        <div class="dltld-image-item-dtls" style="background-image: url(./assets/detailedpagemain.svg);">
+            <div class="text-area-dltld">
+                <h3 class="dtld-head-text">Experience Immersive Sound with the Rixus RGB Bluetooth Speaker</h3>
+                <div class="dtld-title-text">
+                    <span>By John Doe Oct 19</span>
+                    <span>. 10 Min</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="detailing-itm-prnt">
+        <h2 class="detailing-heading">Stunning RGB Lighting</h2>
+        <p class="deatiling-titltes">
+            The Rixus RGB Bluetooth Speaker is not just a speaker; 
+            it's a complete audio-visual experience. 
+            With its built-in RGB LED lighting, you can create 
+            a vibrant and dynamic atmosphere that perfectly complements 
+            the music. The mesmerizing play of colours will captivate your 
+            senses, adding an extra layer of excitement to your listening 
+            sessions.
+        </p>
+    </div>
+    <div class="detailing-itm-prnt">
+        <h2 class="detailing-heading">Stunning RGB Lighting</h2>
+        <p class="deatiling-titltes">
+            The Rixus RGB Bluetooth Speaker is not just a speaker; 
+            it's a complete audio-visual experience. 
+            With its built-in RGB LED lighting, you can create 
+            a vibrant and dynamic atmosphere that perfectly complements 
+            the music. The mesmerizing play of colours will captivate your 
+            senses, adding an extra layer of excitement to your listening 
+            sessions.
+        </p>
+    </div>
+    <div class="detailing-itm-prnt">
+        <h2 class="detailing-heading">Stunning RGB Lighting</h2>
+        <p class="deatiling-titltes">
+            The Rixus RGB Bluetooth Speaker is not just a speaker; 
+            it's a complete audio-visual experience. 
+            With its built-in RGB LED lighting, you can create 
+            a vibrant and dynamic atmosphere that perfectly complements 
+            the music. The mesmerizing play of colours will captivate your 
+            senses, adding an extra layer of excitement to your listening 
+            sessions.
+        </p>
+    </div>
+    <div class="detailing-itm-prnt">
+        <h2 class="detailing-heading">Stunning RGB Lighting</h2>
+        <p class="deatiling-titltes">
+            The Rixus RGB Bluetooth Speaker is not just a speaker; 
+            it's a complete audio-visual experience. 
+            With its built-in RGB LED lighting, you can create 
+            a vibrant and dynamic atmosphere that perfectly complements 
+            the music. The mesmerizing play of colours will captivate your 
+            senses, adding an extra layer of excitement to your listening 
+            sessions.
+        </p>
+    </div>
+    <div class="detailing-itm-prnt">
+        <h2 class="detailing-heading">Stunning RGB Lighting</h2>
+        <p class="deatiling-titltes">
+            The Rixus RGB Bluetooth Speaker is not just a speaker; 
+            it's a complete audio-visual experience. 
+            With its built-in RGB LED lighting, you can create 
+            a vibrant and dynamic atmosphere that perfectly complements 
+            the music. The mesmerizing play of colours will captivate your 
+            senses, adding an extra layer of excitement to your listening 
+            sessions.
+        </p>
+    </div>
+    <div class="detailing-itm-prnt">
+        <h2 class="detailing-heading">Stunning RGB Lighting</h2>
+        <p class="deatiling-titltes">
+            The Rixus RGB Bluetooth Speaker is not just a speaker; 
+            it's a complete audio-visual experience. 
+            With its built-in RGB LED lighting, you can create 
+            a vibrant and dynamic atmosphere that perfectly complements 
+            the music. The mesmerizing play of colours will captivate your 
+            senses, adding an extra layer of excitement to your listening 
+            sessions.
+        </p>
+    </div>
+</section>
+<div class="container">
+    <!-- featured Blog -->
+    <h2 class="section-name">featured Blog</h2>
+    <div class="featured-blog">
+        <div class="ft-blog">
+            <div class="card-blog--img-prnt">
+                <img src="./assets/ftblogone.png" alt="">
+            </div>
+            <div>
+                <p class="innerpage-under-blog-list-head">Lorem ipsum dolor sit amet, consectetur adipiscing  dolor sit</p>
+                <div class="innerpage-under-blog-list-titlte"><span>Oct 19</span> <span>.10 min</span></div>
+            </div>
+        </div>
+        <div class="ft-blog">
+            <div class="card-blog--img-prnt">
+                <img src="./assets/ftblogone.png" alt="">
+            </div>
+            <div>
+                <p class="innerpage-under-blog-list-head">Lorem ipsum dolor sit amet, consectetur adipiscing  dolor sit</p>
+                <div class="innerpage-under-blog-list-titlte"><span>Oct 19</span> <span>.10 min</span></div>
+            </div>
+        </div>
+        <div class="ft-blog">
+            <div class="card-blog--img-prnt">
+                <img src="./assets/ftblogone.png" alt="">
+            </div>
+            <div>
+                <p class="innerpage-under-blog-list-head">Lorem ipsum dolor sit amet, consectetur adipiscing  dolor sit</p>
+                <div class="innerpage-under-blog-list-titlte"><span>Oct 19</span> <span>.10 min</span></div>
+            </div>
+        </div>
+        <div class="ft-blog">
+            <div class="card-blog--img-prnt">
+                <img src="./assets/ftblogone.png" alt="">
+            </div>
+            <div>
+                <p class="innerpage-under-blog-list-head">Lorem ipsum dolor sit amet, consectetur adipiscing  dolor sit</p>
+                <div class="innerpage-under-blog-list-titlte"><span>Oct 19</span> <span>.10 min</span></div>
+            </div>
+        </div>
+        <div class="ft-blog">
+            <div class="card-blog--img-prnt">
+                <img src="./assets/ftblogone.png" alt="">
+            </div>
+            <div>
+                <p class="innerpage-under-blog-list-head">Lorem ipsum dolor sit amet, consectetur adipiscing  dolor sit</p>
+                <div class="innerpage-under-blog-list-titlte"><span>Oct 19</span> <span>.10 min</span></div>
+            </div>
+        </div>
+        <div class="ft-blog">
+            <div class="card-blog--img-prnt">
+                <img src="./assets/ftblogone.png" alt="">
+            </div>
+            <div>
+                <p class="innerpage-under-blog-list-head">Lorem ipsum dolor sit amet, consectetur adipiscing  dolor sit</p>
+                <div class="innerpage-under-blog-list-titlte"><span>Oct 19</span> <span>.10 min</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

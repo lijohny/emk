@@ -15,11 +15,37 @@
 </style>
 <body>
     <div class="main main-parent container">
+        <!-- Hamburger icon -->
+        <div class="hamburger" onclick="toggleSidebar()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="24" height="24" fill="url(#pattern0_10_3)"/>
+                <defs>
+                <pattern id="pattern0_10_3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_10_3" transform="scale(0.0104167)"/>
+                </pattern>
+                <image id="image0_10_3" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAACT0lEQVR4nO2bQW4TQRAAS5aAY3gHCQfi8IEcc8aS+1FBiRLBYwh8IvAQEo5BoJV2L5bszNqG6fVUSS3tqdfq3u0Zj8sgIiIiIiIiIiKynrfANfAd+NVHd30FnOyhcK+BOXABLIDYcyz63KfA0ZQa/Qr4BPwG/qyJJ+AWeLlF/hlwBiz/QdHXxbK/Z3fv9MX/tqHwq/F1ZBNmwPl/LPxqnGdvwucRxR/iZkT+9xWLP0T3JqSd+ZvGzqZxdFw485cJGrDMuiZcb1H8IT4W5J8nKP4Q3cKcjh87NOC+IP9FgsIP0X2WdDzu0ICHgvyLBIUf4gMJedihAT8L8i8SFD51AxxBlbna4Q24LMh/muDJH+IdCTnpt5TbbEPfFOQ/chv6PLdbNKDbvpZyluDp77bDaemOFe5GFP8L8GJE/plHEWVNuHlmHD31T/6Y4tc+jJtnPwda5bj/hnvff0d47K8vC2d+yZpw6nG0iIiIiIiIiIjI9N3QmKo7eohuaEzFHT10NzSyu6MtuKGR1R1txQ2NgnFUZU1oyQ2NjO5oS2JWZHRHW3JDI6O62JIbGhkb4Aii7ghqyQ2NjO5oK25oZP4LUwtuaGR2Rw/dDY3sRxGH6obGFN3RqbuhMdXjaBERERERERERaY9Dd0Mj6+Fdi25oZHFJW3dDo/YPOLqh1HNJdUPZehztZU3QDaWuS6qYRV2RSzeUuiqjbih1G+AIou4I0g2lrkuqG0rdbWiHbih1XdLW3dDI4JK26IZGRpf00N3QGBm6pCIiIiIiIiIiQgl/AUh7D0/HT2zyAAAAAElFTkSuQmCC"/>
+                </defs>
+            </svg>
+                 
+        </div>
+
         <div class="left-sideBar">
             <div class="sideBarBox">
+                <!-- Close button for sidebar -->
+                <div class="close-btn" onclick="toggleSidebar()">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="32" height="32" fill="url(#pattern0_11_4)"/>
+                        <defs>
+                        <pattern id="pattern0_11_4" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_11_4" transform="scale(0.03125)"/>
+                        </pattern>
+                        <image id="image0_11_4" width="32" height="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB3klEQVR4nO2WyUoDQRCGv0P0YnC5aNCrG3hwfw0176LmKrhcRfGo+BCeNEbwHcTl5nZVcEtOMVLwB5px0vaMUSL4Q0Mztf3TVdXV8I8/hhGgABwDF8Crlu2LwDIw/BOBZ4ASUAtcRnC6GYHbgB3gXY4fgF1gTqfRoWX7eWBPOjXZbAOZtMF7gBM5ewNWgc4AO9NZA8rOaXSn+fOSHNwrBUkxDlzLxynQnsR4R4a3QD/pYbZ38rUVajSj/NmxT/J9TCkdVe2/REmMLedxyHpsG8nW5dNa1YsRp9rjCm5FPZ+LkeUkM50ouoBH+R7yEShIydop7u8uJI+SyEVkcSexL/mSj0BRStbTcYgGyjX4Foe8dI58BK6k5LtOowFDgrvpvfQReJGSr9AMvcCZc/VeBrRrVroWoyGeAwn0RQhcBRDolO5TS6eg+AtFeOgjsPwLbbjY0hcRGp81jdRmXcUbIcdfx7SGUTl0eAQMt4qG0USo0bYY2ygd+EbwAWccbyYxzDipsAfJbIrg9rc3zhRM/DTrdkiUNVKtmL5Cl3Jece7+xE+yOjJ6yVTl7FHttACMquiy2uclq1d7Vcee+lHqYgw4SPAsLzapgD9hSPP8SD3/onWuFrNLZvCz2T9aGB9HiMQfIzaPcAAAAABJRU5ErkJggg=="/>
+                        </defs>
+                    </svg>     
+                </div>
                 <div class="SearchBox">
-                    <span>Search for Blogs</span>
-                    <span>
+                    <input class="inputboxserch" placeholder="Search for Blogs">
+                    <span style="cursor: pointer;">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.0625 15.625C12.6869 15.625 15.625 12.6869 15.625 9.0625C15.625 5.43813 12.6869 2.5 9.0625 2.5C5.43813 2.5 2.5 5.43813 2.5 9.0625C2.5 12.6869 5.43813 15.625 9.0625 15.625Z" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M13.7031 13.7031L17.5 17.5" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -55,7 +81,20 @@
                 <h2 class="suscrbe-section-head" style="font-weight: 300;">Subscribe For Our New Updates</h2>
                 <div class="scrbe_form-parnt">
                     <input type="email" placeholder="Your best email address">
-                    <button class="common-button">Subscribe Now</button>
+                    <button class="animated-button">
+                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                          ></path>
+                        </svg>
+                        <span class="text">Subscribe Now</span>
+                        <span class="circle"></span>
+                        <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                          ></path>
+                        </svg>
+                    </button>
                 </div>
             </div>
 
@@ -165,14 +204,13 @@
                 </div>
             </div>
             <div class="button-section">
-                <button class="common-button viewmore">
-                    <span class="">View More</span>
-                    <span>
-                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 6.00868L12.8593 6.00001M8.34133 10.6667L13 6.00001L8.34133 1.33334" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                <button class="learn-more">
+                    <span class="circle" aria-hidden="true">
+                    <span class="icon arrow">
                     </span>
-                </button>
+                    </span>
+                    <span class="button-text">View More</span>
+                  </button>
             </div>
 
             <!-- Latest Articles -->
@@ -193,7 +231,9 @@
                             </h3>
                             
                             <p class="ltst-artcles-psect">Upgrade your sound with the Rixus RGB Bluetooth Speaker. This speaker is a true game-changer, offering an immersive listening experience that will transport you into the heart of your favourite music, movies, and games.</p>
-                            <button class="common-button viewmore">Read More</button>
+                            <div class="rewdmorebtn">
+                                <a href="./detailpage.html" class="common-button viewmore">Read More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -259,17 +299,28 @@
 
              <!-- get in touch -->
               <div class="whatsapp-section">
-                <img class="backgrpund-image-whatsapp" src="./assets/whatsappimage.png" width="100%" height="430px" alt="">
-                <div class="whatsapp-word-text">
-                    <div class="whatsapp-log">
-                        <img src="./assets/whtsapp.png" alt="">
-                        Whatsapp
+                <div class="backgrnd-img-prnt">
+                    <!-- <img class="backgrpund-image-whatsapp" src="./assets/whatsappimage.png" width="100%" height="430px" alt=""> -->
+                    <div class="whatsapp-word-text">
+                        <div class="whatsapp-log">
+                            <img src="./assets/whtsapp.png" alt="">
+                            Whatsapp
+                        </div>
+                        <h2>Get Latest Updates, Through Our Channel</h2>
+                        <a href="" class="common-button viewmore">Join Now</a>
                     </div>
-                    <h2>Get Latest Updates, Through Our Channel</h2>
-                    <a href="" class="common-button viewmore">Join Now</a>
                 </div>
+ 
               </div>
         </div>        
     </div>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.left-sideBar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+    
+    
 </body>
 </html>

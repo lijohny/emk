@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0 auto;
+    }
+    .detailed-prdctcard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 68px;
+        margin-top: 72px;
+        margin-bottom: 72px;
+        position: relative;
+    }
+    .dtldpopBtn{
+        display: none;
+        position: absolute;
+        top: 45%;
+        left: 15%;
+        transform: translate(-7%);
+
+        background-color: #f08c32;
+        color: white;
+        outline: none;
+        border: none;
+        padding:10px 57px;
+        border-radius: 25px;
+        cursor: pointer;
+
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .detailed-prdctcard:hover .dtldpopBtn{
+        display: block;
+    }
+    .detailed-prdctcard .itemimage {
+        width: 100%;
+    }
+    .detailed-prdctcard .profile-box{
+        justify-content: flex-start;
+        padding-bottom: 38px;
+    }
+    .dtld-artcles-psect{
+        color: #232536;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .dtld-artcles-hsect{
+        font-size: 30px;
+        font-weight: 600;
+        color: #1A1A1A;
+    }
+    .profile-box {
+        padding-top: 25px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 20px;
+    }
+    .btnprnt{
+        transition:1s all;
+    }
+    @media (min-width: 600px) {
+    .container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+    @media (min-width: 1200px){
+        .container {
+            width: 95%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .detailed-prdctcard{
+            flex-direction: row;
+        }
+        .dtld-artcles-hsect{
+            font-size: 35px;
+        }
+    }
+
+</style>
+<body>
+    <section class="container">
+        <div class="detailed-prdctcard">
+            <img class="itemimage" src="./assets/detailpageone.png" alt="">
+            <div>
+                <h3 class="dtld-artcles-hsect">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                </h3>
+                <div class="profile-box">
+                    <img style="cursor: pointer;" src="./assets/profiledark.png" alt="">
+                    <div>
+                        <span>Dasteen</span>
+                        <p class="date-text">Jan 10, 2024</p>
+                    </div>
+                    <div class="date-text">
+                        <span>3</span>
+                        <span>MIN</span>
+                        <span>Clip</span>
+                    </div>
+               </div>
+                <p class="dtld-artcles-psect">Upgrade your sound with the Rixus RGB Bluetooth Speaker. This speaker is a true game-changer, offering an immersive listening experience that will transport you into the heart of your favourite music, movies, and games.</p>
+            </div>
+            <div class="btnprnt">
+                <a href="./innerpage.html" class="dtldpopBtn">View more</a>
+            </div>
+        </div>
+
+        <div class="detailed-prdctcard">
+            <img class="itemimage" src="./assets/detailapgetwo.png" alt="">
+            <div>
+                <h3 class="dtld-artcles-hsect">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                </h3>
+                <div class="profile-box">
+                    <img style="cursor: pointer;" src="./assets/profiledark.png" alt="">
+                    <div>
+                        <span>Dasteen</span>
+                        <p class="date-text">Jan 10, 2024</p>
+                    </div>
+                    <div class="date-text">
+                        <span>3</span>
+                        <span>MIN</span>
+                        <span>Clip</span>
+                    </div>
+               </div>
+                <p class="dtld-artcles-psect">Upgrade your sound with the Rixus RGB Bluetooth Speaker. This speaker is a true game-changer, offering an immersive listening experience that will transport you into the heart of your favourite music, movies, and games.</p>
+            </div>
+            <div class="btnprnt">
+                <a href="./innerpage.html" class="dtldpopBtn">View more</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
